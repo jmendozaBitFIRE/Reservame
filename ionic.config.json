@@ -1,0 +1,7 @@
+{
+  "name": "Reservame",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

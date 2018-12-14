@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title >Reservame</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <button ion-item *ngFor="let category of categories"
+            (click)="goToRestaurants(category)">
+      <ion-avatar item-start>
+        <img [src]="category.image">
+      </ion-avatar>
+      <h2>{{ category.name }}</h2>
+      <p>{{ category.description }}</p>
+    </button>
+  </ion-list>
+</ion-content>
